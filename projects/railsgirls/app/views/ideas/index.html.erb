@@ -1,8 +1,8 @@
 <p style="color: green"><%= notice %></p>
 
-<h3>Ideasy</h3>
+<h3 class="title">Ideasy</h3> 
 
-<div id="ideas">
+<div id="ideas" >
   <% @ideas.each do |idea| %>
     <%= render idea %>
     <p>
@@ -11,4 +11,4 @@
   <% end %>
 </div>
 
-<%= link_to "New idea", new_idea_path %>
+<footer> <%= link_to "New idea", new_idea_path %> <footer>

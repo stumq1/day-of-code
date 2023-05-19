@@ -1,17 +1,17 @@
-<div id="<%= dom_id idea %>">
+<div id="<%= dom_id idea %>" class="idea">
   <p>
-    <strong>Name:</strong>
+    <strong class="label">Name:</strong>
     <%= idea.name %>
   </p>
 
   <p>
-    <strong>Description:</strong>
-    <%= idea.description %>
+    <strong class="label">Description:</strong>
+    <span id="freeagent"> <%= idea.description %> </span>
   </p>
 
   <p>
-    <strong>Picture:</strong>
-    <img src="<%= idea.picture %>" width="500">
+    <strong class="label" id="picture-label">Picture:</strong>
+    <img src="<%= idea.picture %>">
   </p>
 
 </div>
